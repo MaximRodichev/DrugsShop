@@ -2,13 +2,18 @@
 using Domain.ValueObjects;
 
 //"RU", "US", "CA", "GB", "FR", "DE", "IT", "ES", "JP", "CN"
-Country q = new Country("Russia", "AH");
-Drug b = new Drug("Paraцетомол №10 20мг", "Ruссия", "AH");
-Address a = new Address("Tiraspol", "Sverdlova", "99", "30199", "036");
-Console.WriteLine($"{await a.Validate()}");
-DrugNetwork dn = new DrugNetwork("E-Apteka"); 
-DrugStore v = new DrugStore(dn, 3, a);
-DrugStore g = new DrugStore(dn, 3, a);
+try
+{
+    Country q = new Country("Russia", "AH");
+    Drug b = new Drug("Paraцетомол №10 20мг", "Ruссия", "AH");
+    Address a = new Address("Tiraspol", "Sverdlova", "99", "30199", "036");
+
+    DrugNetwork dn = new DrugNetwork("E-Apteka"); 
+    DrugStore v = new DrugStore(dn, 3, a);
+    Console.WriteLine(v.DrugNetwork.Name);
+    DrugStore g = new DrugStore(dn, 3, a);
+    Console.WriteLine(dn.Stores.Count);
+}catch(Exception ex){Console.WriteLine(ex.Message);}
 try
 {
     /*Country q = new Country("Russia", "FR");*/

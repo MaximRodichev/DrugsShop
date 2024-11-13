@@ -10,25 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33ceb428-150f-4088-ba3a-da60b9a9606e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Domain/Entities/Country.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Validations/CountryValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Validations/DrugItemValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Validations/DrugStoreValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Validations/DrugValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Validations/ValidationMessages.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/ValueObjects/BaseValueObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HandTest_Console/Context.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HandTest_Console/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DrugsShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrugsShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/BaseObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/BaseEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Drug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Drug.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/DrugItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/DrugItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/DrugNetwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/DrugNetwork.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/Entities/DrugStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/DrugStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Validations/DrugStoreValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Validations/DrugStoreValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/ValueObjects/Address.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/ValueObjects/Address.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrugsShop.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DrugsShop.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrugsShop/DrugsShop.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HandTest_Console/HandTest_Console.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrugsShop/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandTest_Console/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HandTest_Console/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +38,15 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5147b10c5a8c4522b56fba0a889139cfc8f908/14/4173aba7/List`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/135d867c4d4e51c04ef59bb0217b3148b1206070e29579a6ce187125a52bf54e/AbstractValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/525d52585f9c56d742fa4cccbfd5f4864e1ba7a77ba35105172c8c8787c041/AsyncVoidMethodBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7fa41aef4121dae023fbc430b354e1f9f9a4f5eb8846ab812b154c5a7e01f11/TrackingCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8ea1fcebf71d4ec73d2e785ed215f67d3b976e148eb514e4013334da18fa/ExtensionsInternal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a6b1457cbcf17db31a383ba49ef9bcc786cf3ef77146d997eee499b27a46d/Object.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a42ba4db448ed38dcb9fb39194c637a317a8281856b88e139e8a905ee6d12b/Guid.Windows.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b7208b3f72528d22781d25fde9a55271bdf2b5aade4f03b1324579a25493cd8/List.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eec252cf40b8ff96a3a028a3eddc6ac8c0d3f385d85e6def3cfc7d63fbc5918e/DefaultValidatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -66,19 +61,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.HandTest_Console.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.HandTest_Console.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.3745624",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.HandTest_Console">
     <configuration name="DrugsShop" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -148,6 +144,8 @@
       <workItem from="1730907417099" duration="5047000" />
       <workItem from="1730992919069" duration="16873000" />
       <workItem from="1731020961047" duration="12604000" />
+      <workItem from="1731469111285" duration="6760000" />
+      <workItem from="1731486628806" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="First attempt since Thursday">
       <option name="closed" value="true" />
@@ -157,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730394295730</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Печаль. Сделал ISO код, не сделал уникальность номера аптеки для всей сети">
+      <option name="closed" value="true" />
+      <created>1731474756694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731474756694</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +174,57 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First attempt since Thursday" />
-    <option name="LAST_COMMIT_MESSAGE" value="First attempt since Thursday" />
+    <MESSAGE value="Печаль. Сделал ISO код, не сделал уникальность номера аптеки для всей сети" />
+    <option name="LAST_COMMIT_MESSAGE" value="Печаль. Сделал ISO код, не сделал уникальность номера аптеки для всей сети" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Domain/Entities/DrugStore.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\Hi-tech\RiderProjects\DrugsShop\Domain\Entities\DrugStore.cs" containingFunctionPresentation="Constructor 'DrugStore'">
+            <startOffsets>
+              <option value="514" />
+            </startOffsets>
+            <endOffsets>
+              <option value="543" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Domain/Entities/DrugStore.cs</url>
+          <line>54</line>
+          <properties documentPath="C:\Users\Hi-tech\RiderProjects\DrugsShop\Domain\Entities\DrugStore.cs" containingFunctionPresentation="Method 'Validate'">
+            <startOffsets>
+              <option value="1520" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1558" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Domain/Entities/DrugStore.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\Hi-tech\RiderProjects\DrugsShop\Domain\Entities\DrugStore.cs" containingFunctionPresentation="Constructor 'DrugStore'">
+            <startOffsets>
+              <option value="465" />
+            </startOffsets>
+            <endOffsets>
+              <option value="501" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -24,6 +24,8 @@ namespace Domain.ValueObjects
             House = house;
             PostalCode = postcode;
             Country = country;
+
+            /*Validate().GetAwaiter();*/
         }
         
         /// <summary>

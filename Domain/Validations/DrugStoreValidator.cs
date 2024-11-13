@@ -18,14 +18,10 @@ public class DrugStoreValidator : AbstractValidator<DrugStore>
         
         //TODO: Не знаю как асинхронную валидацию запихнуть в конструктор класса
         RuleFor(x => x.Address)
-            .NotEmpty().WithMessage(ValidationMessages.RequiredField);
-           /* .SetValidator(new AddressValidator());*/
-        
-        RuleForEach(network => network.DrugNetwork.Stores).ChildRules(
-            store =>
-            {
-                store.RuleFor(s => s.Number)
-                    .Must((store, number) => number == store.Number).WithMessage("Invalid number");
-            });
+            .NotEmpty().WithMessage(ValidationMessages.RequiredField)
+            .SetValidator(new AddressValidator());
+
+           RuleFor(ds => ds)
+               .Must(ds => !ds.DrugNetwork.Stores.Select(x => x.Number).Contains(ds.Number)).WithMessage("Invalid number");
     }
 }

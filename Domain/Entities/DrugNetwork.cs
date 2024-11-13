@@ -18,11 +18,11 @@ public class DrugNetwork : BaseEntity
     /// Имя сети аптек
     /// </summary>
     public string Name { get; set; }
-    
+
     /// <summary>
     /// Навигационное свойство, для доступа ко всем аптекам
     /// </summary>
-    public ICollection<DrugStore> Stores { get; set; }
+    public ICollection<DrugStore> Stores { get; set; } = new List<DrugStore>();
 
     private void Validate()
     {

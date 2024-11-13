@@ -19,7 +19,8 @@ namespace Domain.Entities
             Number = number;
             Address = address;
 
-            Validate();
+            Validate().GetAwaiter().GetResult();
+            DrugNetwork.Stores.Add(this);
         }
 
         
@@ -43,7 +44,7 @@ namespace Domain.Entities
         // Навигационное свойство для связи с DrugItem
         public ICollection<DrugItem> DrugItems { get; private set; } = new List<DrugItem>();
         
-        private async void Validate()
+        private async Task<bool> Validate()
         {
             var validator = new DrugStoreValidator();
             var result = await validator.ValidateAsync(this);
@@ -53,6 +54,8 @@ namespace Domain.Entities
                 var errors = string.Join("\n", result.Errors);
                 throw new ValidationException(errors);
             }
+
+            return true;
         }
     }
 }
