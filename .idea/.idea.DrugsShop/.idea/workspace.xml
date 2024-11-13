@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33ceb428-150f-4088-ba3a-da60b9a9606e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DrugsShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DrugsShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/DrugNetwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/DrugNetwork.cs" afterDir="false" />
+    <list default="true" id="33ceb428-150f-4088-ba3a-da60b9a9606e" name="Changes" comment="GetAwaiter + GetResult творят чудеса">
       <change beforePath="$PROJECT_DIR$/Domain/Entities/DrugStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/DrugStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Validations/DrugStoreValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Validations/DrugStoreValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/ValueObjects/Address.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/ValueObjects/Address.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HandTest_Console/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HandTest_Console/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.HandTest_Console.executor": "Debug",
+    ".NET Project.HandTest_Console.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.3745624",
     "git-widget-placeholder": "master",
@@ -145,7 +141,7 @@
       <workItem from="1730992919069" duration="16873000" />
       <workItem from="1731020961047" duration="12604000" />
       <workItem from="1731469111285" duration="6760000" />
-      <workItem from="1731486628806" duration="2339000" />
+      <workItem from="1731486628806" duration="2690000" />
     </task>
     <task id="LOCAL-00001" summary="First attempt since Thursday">
       <option name="closed" value="true" />
@@ -163,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731474756694</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GetAwaiter + GetResult творят чудеса">
+      <option name="closed" value="true" />
+      <created>1731489198464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731489198464</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,49 +179,24 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First attempt since Thursday" />
     <MESSAGE value="Печаль. Сделал ISO код, не сделал уникальность номера аптеки для всей сети" />
-    <option name="LAST_COMMIT_MESSAGE" value="Печаль. Сделал ISO код, не сделал уникальность номера аптеки для всей сети" />
+    <MESSAGE value="GetAwaiter + GetResult творят чудеса" />
+    <option name="LAST_COMMIT_MESSAGE" value="GetAwaiter + GetResult творят чудеса" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Domain/Entities/DrugStore.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\Hi-tech\RiderProjects\DrugsShop\Domain\Entities\DrugStore.cs" containingFunctionPresentation="Constructor 'DrugStore'">
-            <startOffsets>
-              <option value="514" />
-            </startOffsets>
-            <endOffsets>
-              <option value="543" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Domain/Entities/DrugStore.cs</url>
           <line>54</line>
           <properties documentPath="C:\Users\Hi-tech\RiderProjects\DrugsShop\Domain\Entities\DrugStore.cs" containingFunctionPresentation="Method 'Validate'">
             <startOffsets>
-              <option value="1520" />
+              <option value="1586" />
             </startOffsets>
             <endOffsets>
-              <option value="1558" />
+              <option value="1624" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Domain/Entities/DrugStore.cs</url>
-          <line>21</line>
-          <properties documentPath="C:\Users\Hi-tech\RiderProjects\DrugsShop\Domain\Entities\DrugStore.cs" containingFunctionPresentation="Constructor 'DrugStore'">
-            <startOffsets>
-              <option value="465" />
-            </startOffsets>
-            <endOffsets>
-              <option value="501" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

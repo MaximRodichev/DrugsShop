@@ -18,7 +18,7 @@ namespace Domain.Entities
             DrugNetwork = drugNetwork;
             Number = number;
             Address = address;
-
+            //Ожидаем выполнение асинхронной функции принудительно
             Validate().GetAwaiter().GetResult();
             DrugNetwork.Stores.Add(this);
         }

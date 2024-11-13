@@ -11,8 +11,10 @@ try
     DrugNetwork dn = new DrugNetwork("E-Apteka"); 
     DrugStore v = new DrugStore(dn, 3, a);
     Console.WriteLine(v.DrugNetwork.Name);
-    DrugStore g = new DrugStore(dn, 3, a);
+    DrugStore g = new DrugStore(dn, 4, a);
     Console.WriteLine(dn.Stores.Count);
+    DrugItem di = new DrugItem(100.5m, 100001, b, v);
+    
 }catch(Exception ex){Console.WriteLine(ex.Message);}
 try
 {
